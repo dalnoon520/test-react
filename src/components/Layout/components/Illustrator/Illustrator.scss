@@ -1,0 +1,48 @@
+.illustration-img {
+    width: 100%;
+}
+
+.section-illustrator {
+    position: relative;
+
+    .btn-group {
+        position: absolute;
+        top: 50%;
+        margin-left: 7vw;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    Button {
+        margin-top: 10px;
+    }
+}
+
+.recent-task {
+    margin: 0 52px;
+
+    .data-heading {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+
+    .data-table__head > .MuiTableCell-root {
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    .data-table__body > .MuiTableCell-root {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+}
+
+.Polaris-TopBar {
+    height: 4.5rem;
+}
+
+#btn-home {
+    background-color: #576bc9;
+}

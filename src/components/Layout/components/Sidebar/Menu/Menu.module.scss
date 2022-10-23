@@ -1,0 +1,24 @@
+
+.menu-item {
+    display: flex;
+    text-decoration: none;
+    padding-left: 16px;
+    align-items: center;
+    color: #444
+}
+
+.title {
+    margin-left: 12px;
+    flex: 1;
+    color: #444
+}
+
+nav div:nth-child(2) .menu-item div:last-child .status {
+    flex: 0.5;
+    font-size: 1.2rem;
+    text-align: end;
+    margin-right: 10px;
+    padding: .5px 2px;
+    border-radius: 10px;
+    background-color: #c0c0c0;
+}

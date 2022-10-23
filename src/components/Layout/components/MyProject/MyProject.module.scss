@@ -1,0 +1,33 @@
+.wrapper {
+    padding-left: 16px;
+}
+.label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.menu-item {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.title {
+    flex: 1;
+    margin-left: 12px;
+    color: #444
+}
+
+// .myproject-item .status {
+//     flex: 0.5;
+//     text-align: end;
+//     margin-right: 10px;
+//     background-color: #5bcdda;
+//     font-size: 1.3rem;
+//     padding: 0.5px 3px;
+//     border-radius: 9px;
+// }
+
+.icon {
+    margin-right: 10px;
+}

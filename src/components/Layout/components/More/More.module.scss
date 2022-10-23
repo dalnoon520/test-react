@@ -1,0 +1,32 @@
+.wrapper {
+    padding-left: 16px;
+}
+.label {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.menu-item {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.title {
+    flex: 1;
+    margin-left: 12px;
+    color: #444
+}
+.status {
+    font-size: 1.2rem;
+    text-align: end;
+    margin-right: 10px;
+    background-color: #b2e6b0;
+    padding: 0 4px;
+    color: #444;
+    border-radius: 10px;
+}
+
+.icon {
+    margin-right: 10px;
+}
