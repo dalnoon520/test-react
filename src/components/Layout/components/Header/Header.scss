@@ -1,0 +1,23 @@
+.Polaris-Frame {
+    min-height: 0vh;
+}
+
+.header-item {
+    display: flex;
+
+    .credit {
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+
+        .credit-label {
+            width: max-content;
+            margin-right: 8px;
+        }
+    }
+}
+
+.header-item .Polaris-Button {
+    width: 14rem;
+    margin-right: 8px;
+}

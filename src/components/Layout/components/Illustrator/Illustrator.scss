@@ -46,3 +46,23 @@
 #btn-home {
     background-color: #576bc9;
 }
+
+.header-item .Polaris-Button {
+    width: 14rem;
+}
+
+.Polaris-Icon.Polaris-Icon--colorBase.Polaris-Icon--applyColor {
+    width: 16px;
+    height: 16px;
+}
+
+.data-table__body {
+    .data-table__id {
+        font-weight: bold !important;
+    }
+
+    .data-table__name {
+        color: #1c318f;
+        font-weight: 600;
+    }
+}

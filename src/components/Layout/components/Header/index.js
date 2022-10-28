@@ -1,7 +1,7 @@
 import { TopBar, ActionList, Icon, VisuallyHidden, Frame, Button } from '@shopify/polaris';
-import { ArrowLeftMinor, NotificationMajor } from '@shopify/polaris-icons';
+import { ArrowLeftMinor, NotificationMajor, CirclePlusOutlineMinor } from '@shopify/polaris-icons';
 import { useState, useCallback } from 'react';
-import styles from './Header.module.scss';
+import styles from './Header.scss';
 import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
@@ -55,22 +55,29 @@ function Header() {
     );
 
     const secondaryMenuMarkup = (
-        <TopBar.Menu
-            activatorContent={
-                <span>
-                    <Icon source={NotificationMajor} color="base" />
-                    <VisuallyHidden>Secondary menu</VisuallyHidden>
-                </span>
-            }
-            open={isSecondaryMenuOpen}
-            onOpen={toggleIsSecondaryMenuOpen}
-            onClose={toggleIsSecondaryMenuOpen}
-            actions={[
-                {
-                    items: [{ content: 'Community forums' }],
-                },
-            ]}
-        />
+        <div className={cx('header-item')}>
+            <div className={cx('credit')}>
+                <div className={cx('credit-label')}>Available credits: 4</div>
+                <Icon source={CirclePlusOutlineMinor} color="base" />
+            </div>
+            <Button>Submit a new task</Button>
+            <TopBar.Menu
+                activatorContent={
+                    <span>
+                        <Icon source={NotificationMajor} color="base" />
+                        <VisuallyHidden>Secondary menu</VisuallyHidden>
+                    </span>
+                }
+                open={isSecondaryMenuOpen}
+                onOpen={toggleIsSecondaryMenuOpen}
+                onClose={toggleIsSecondaryMenuOpen}
+                actions={[
+                    {
+                        items: [{ content: 'Community forums' }],
+                    },
+                ]}
+            />
+        </div>
     );
 
     const newTask = <TopBar.secondaryMenu newTaskButton={<Button>Submit a new task</Button>} />;

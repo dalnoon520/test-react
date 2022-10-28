@@ -11,7 +11,7 @@ import Paper from '@material-ui/core/Paper';
 
 const cx = classNames.bind(styles);
 
-const rows = [['Emerald Silk Gown', '$875.00', 124689, 140, '$122,500.00']];
+
 
 function RecentTask() {
     const [error, setError] = useState(null);
@@ -57,12 +57,15 @@ function RecentTask() {
                 <TableBody>
                     {items.map((item) => (
                         <TableRow key={item.id} className={cx('data-table__body')}>
-                            <TableCell component="th" scope="row">
+                            <TableCell component="th" scope="row" className={cx('data-table__type')}>
                                 {item.type}
                             </TableCell>
-                            <TableCell align="left">#{item.id}</TableCell>
-                            <TableCell align="left">{item.name}</TableCell>
-                            <TableCell align="left">{item.status ? 'Active' : 'Fail'}</TableCell>
+                            <TableCell align="left" className={cx('data-table__id')}>#{item.id}</TableCell>
+                            <TableCell align="left">
+                                <div className={cx('data-table__name')}>{item.name}</div>
+                                <div className={cx('data-table__description')}>{item.description}</div>
+                            </TableCell>
+                            <TableCell align="left" className={cx('data-table__status')}>{item.status ? 'Active' : 'Fail'}</TableCell>
                             <TableCell align="left">{item.first_deliverable.slice(0,10)}</TableCell>
                             <TableCell align="left">{item.closed.slice(0,10)}</TableCell>
                         </TableRow>
